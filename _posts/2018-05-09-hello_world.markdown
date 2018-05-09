@@ -1,0 +1,13 @@
+---
+layout: post
+title:      "Hello, World"
+date:       2018-05-09 04:27:53 +0000
+permalink:  hello_world
+---
+
+
+My name is Hal Fields. I do not fit the normal profile of a Flatiron coder. (I know, what does normal even mean, anyway?) I am 68 years old. My wife of 44 years and I raised 3 really cool kids. And those kids have given us 5 grandchildren. I’m finishing 33 years at my current job, automobile assembly line worker for General Motors.
+
+As I marched ever closer to retirement, I told my family that I was tired of building cars but not ready to quit work. I just wanted a career where I could create something that I could point to with pride. Being one bee in a hive of workers that built 400 cars per shift was honorable work, but nothing I could take personal pride in. My daughter, Jessica Rudder, heard this and told me I might want to check out website design and development to satisfy my creative impulse. She had gone through a 12 week immersive bootcamp for full stack web development at Flatiron about 3 years ago. She has since gone on to work as a developer at Flatiron and Github and has presented talks at Ruby conferences and Rails conferences in the US and Australia. She convinced me that I could be about as creative as I wanted to be with website design. I enrolled in Flatiron’s Learn-Verified internet learning program. It has been challenging but rewarding.
+
+If we were to meet, one thing you would notice about me is that I am really old. Ok, let me restate that a bit more artfully and in a way that will not preclude me getting a job after I am done with Flatiron School. Ahem … I have lived a long time and have seen some things. My point in bringing this up is that I bring a different perspective to coding than most of you. Let me give an example. When I went to college, starting in 1968, I could tell you the exact number of digital computers in the school. The total number of computers for students, faculty, and the various departments was … drumroll, please, … a grand total of 1. That computer was an IBM 360/mod 50 mainframe. It had 131 kilobytes of magnetic core memory. The  computer, along with it’s input/output devices and the air conditioning system that was used to cool it, took up the entire basement of Harris Hall, and yet had far less computing power than your average smart phone. 50 years ago, most people thought computers would always be big mainframes used exclusively by universities, government, and big business to do numerical analysis and maintain large databases such as payrolls. Few people foresaw the rise of personal computers. Fewer still foresaw the creation of the internet. We’ve come a long way in a short time. I hope that you and I will be a part of the internet of tomorrow.
