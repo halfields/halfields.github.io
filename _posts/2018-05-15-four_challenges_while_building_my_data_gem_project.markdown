@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Four Challenges While Building My Data Gem Project"
+title:      "Four Challenges While Building My CLI Data Gem Project"
 date:       2018-05-15 03:10:28 -0400
 permalink:  four_challenges_while_building_my_data_gem_project
 ---
