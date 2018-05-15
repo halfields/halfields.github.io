@@ -1,0 +1,16 @@
+---
+layout: post
+title:      "Four Challenges While Building My Data Gem Project"
+date:       2018-05-15 07:10:27 +0000
+permalink:  four_challenges_while_building_my_data_gem_project
+---
+
+
+My first problem was psychological. I was a year into Learn.verified and about 2/3 of the way through the lessons and still had not started my CLI gem project. I was letting the perfect become the enemy of the good. I wanted nothing less than a masterpiece, a Mona Lisa or a Sistine Chapel. C’mon, Hal. You’re not DaVinci, and you’re not Michaelangelo. I needed to follow the wisdom of that great philosopher, Bo Jackson, who said, “Just do it!”. Or that other great philosopher, Eddie Van Halen, “Might as well jump. Go ahead and jump. Jump!”
+
+Once I jumped, I was faced with how to begin. I strongly recommend Avi’s video called “CLI Data Gem Walkthrough,” where he builds his daily-deal gem. Particularly good is the first 15 minutes where he takes you from a blank page to the beginning of a fleshed out idea for a gem. Avi answers the question, “how do I get started?” by letting Bundler build the framework.
+Another essential video is “Rails Cast #245: New Gem with Bundler”. In terminal, the command is: bundle gem <gem name>. If your gem name is two or more words, make sure you use underscores to separate the words. If your gem name is foo-bar-baz delimited with dashes, inside  the lib directory, bundler creates a baz file inside a bar subdirectory, inside a foo subdirectory. The baz file has nested foo, bar, and baz modules. This is not what you want. Long story short, delineate your gem name with underscores when using Bundler to set up your gem framework.
+
+My 3rd challenge was the gemspec file, but only because I was unfamiliar with it. Once I worked with it and familiarized myself with it, the gemspec was straightforward. The top of the file prompts you for personal data such as name and email which is used to locate the gem’s repository on GitHub and to publish your gem on RubyGems.org if you choose. The bottom of the file is used to list your dependencies. Gems used for development, such as pry, rake, and bundler, are listed using the method ‘add_development_dependency’. Gems used in the actual construction of the gem are listed using the method ‘add_dependency’. No gems are listed in the Gemfile, but the gemspec is pointed at with this statement: ‘gemspec’.
+
+And lastly, I was faced with the problem of organizing my scraping. There were two distinct styles. One was to create a scraper class, instantiate a scraper object, and call instance methods designed to custom scrape pages. A good example of this style is learn.co's Student Scraper Lesson. The other style does not create a scraper class or scraper objects. Scraping is done with class methods operating on the class of the objects scraped. An example of this style is Avi’s ‘daily_deal’. My gem, sec_mens_bball, tracks basketball standings and individual team schedules in the Southeastern Conference, and was modeled after ‘student_scraper’, so I created a Scraper class, with scraper instances, and instance methods.
