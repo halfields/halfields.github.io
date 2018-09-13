@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Store Arrays in SQLite....Sortof"
-date:       2018-09-13 16:30:03 +0000
+date:       2018-09-13 12:30:04 -0400
 permalink:  store_arrays_in_sqlite_sortof
 ---
 
@@ -12,10 +12,12 @@ As I got deeper into the problem, I realized one way around it was to declare a 
 
 Well, there is a way, ...sortof. Output from the checkboxes on the new event form in views/events/new.erb is stored as an array in the params hash. The params hash is made available to the  "post  '/events'" method in the events controller. I assign this value to an array called races. I then convert the array to one long string named races_string. Strings, of course, can be stored in the database, and I include a races_string column in my database. The code looks like this:
 
+```
   races = params[:races]
   races_string = races.join(",")
   @event.races_string = races_string
   @event.save
+```
 
 And when I want to read and show my data to a view, it is as simple as including the following code in my "get '/events/:id'" method, which takes the long string of comma separated races and converts them back into an array that can then be iterated in the show view:
 
